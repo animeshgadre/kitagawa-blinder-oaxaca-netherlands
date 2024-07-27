@@ -1,0 +1,3 @@
+This is a small, unserious exercise capturing the changes in the gender wage gap in Netherlands with theoaxaca package on R. I try to decompose the wage gap with the help of the Kitagawa-Blinder-Oaxacamethod. I originally intended to do this exercise on Python but I came around to the conclusion that it’sneater and more convenient on R. Be that as it may, the functionality of oaxaca package in R still somewhatlimited (for instance, it can treat only one categorical variable at a time) and this decomposition is bestexecuted on STATA. 
+
+The data folder contains the survey data related to background and work for the years 2019 and 2023. The output folder contains an R script, an R Markdown file and a knitted PDF. 
