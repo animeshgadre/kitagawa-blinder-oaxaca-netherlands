@@ -16,15 +16,15 @@ library(oaxaca)
 library(gridExtra)
 
 # Reading the survey data for 2019
-df1 <- read_dta("blinder_oaxaca_python/cw19l_EN_3.0p/cw19l_EN_3.0p.dta")
-df2 <- read_dta("blinder_oaxaca_python/avars_201904_EN_1.0p/avars_201904_EN_1.0p.dta")
+df1 <- read_dta("data/work2019.dta")
+df2 <- read_dta("data/bg2019.dta")
 
 names(df1)[names(df1) == "cw19l_m"] <- "wave"
 df19 <- merge(df1, df2, by=c("nomem_encr","wave"))
 
 # Reading the survey data for 2023
-data1 <- read_dta("blinder_oaxaca_python/cw23p_EN_1.0p/cw23p_EN_1.0p.dta")
-data2 <- read_dta("blinder_oaxaca_python/avars_202304_EN_1.0p/avars_202304_EN_1.0p.dta")
+data1 <- read_dta("data/work2023.dta")
+data2 <- read_dta("data/bg2023.dta")
 
 names(data1)[names(data1) == "cw23p_m"] <- "wave"
 df23 <- merge(data1, data2, by=c("nomem_encr","wave"))
